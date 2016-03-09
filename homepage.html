@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>Website Title</title></head>
+<!--css-->
+<link href="roadmap.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="css/jcarousel.gqa.css" rel="stylesheet" type="text/css" media="screen" />
+<!--javascript-->
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/fadeshow.js"></script>
+<script type="text/javascript" src="js/E_C.js"></script>
+<script type="text/javascript" src="js/year.js"></script>
+<!-- BANNER-->
+<body onload="loadYear()">	
+    <div id="overlay" class="outline">Header Here</div>
+    <div id="fadeshow"></div>
+     <ul class="menu" id="menu">
+	<li><a href="#" class="menulink" id="Here">Home</a></li>
+    <li><a href="#" class="menulink">Menulink</a></li>
+    <li><a href="#" class="menulink">Menulink</a></li>
+	<li><a href="#" class="menulink">Menulink</a></li>
+	<li><a href="#" class="menulink">Menulink</a>
+		<ul>
+			<li><a href="#">L</a></li>
+		</ul>
+	</li>
+	<li><a href="#" class="Menulink">Menulink</a>
+		<ul>
+			<li><a href="#">D</a></li>
+			<li><a href="#">E</a></li>
+		</ul>
+	</li>
+<!--    <li>
+		<a href="#" class="menulink">Menulink</a>
+		<ul>
+			<li><a href="#">Q</a></li>
+			<li><a href="#">R</a></li>
+		</ul>
+	</li>-->
+    <li><a href="#" class="menulink">Menulink(n)</a>
+		<ul>
+			<li><a href="#">X</a></li>
+			<li><a href="#">Y</a></li>
+			<li><a href="#">Z</a></li>
+		</ul>
+	</li>
+    </ul>
+<div id="roadmap">
+<div class="square">
+</div>
+<div class="arrow-up"></div>
+<div class="arrow-up2"></div>
+<div class="arrow-up3"></div>
+<div class="roadsign" id="rsone"><p>link</p></div>
+<div class="roadsign" id="rstwo"><p>link</p></div>
+<div class="roadsign" id="rsthree"><p>link</p></div>
+<div class="roadsign" id="rsseven"><p>link</p></div>
+<div class="roadsign" id="rsfour"><p>link</p></div>
+<div class="roadsign" id="rsfive"><p>link</p></div>
+<div class="roadsign" id="rssix"><p>link</p></div>
+<div class="roadsign" id="rseight"><p>link</p></div>
+<div class="pole" id="P1"></div>
+<div class="pole" id="P2"></div>
+<div class="pole" id="P3"></div>
+<div class="pole" id="P4"></div>
+<div class="pole" id="P5"></div>
+<div class="pole" id="P6"></div>
+<div class="pole" id="P7"></div>
+<div class="pole" id="P8"></div>
+<label id="year"></label>
+</div>
+<div id="footer">
+</br>For all content related issues to this webpage, please contact Content Owner:
+<a href="mailto:username@email.com?Subject=Technical%20Issue">Content Owner</a>
+</br>Last Updated 3/3/2016.
+</div>  
+<script type="text/javascript">  
+var mygallery=new fadeSlideShow({   
+ wrapperid: "fadeshow", //ID of blank DIV on page to house Slideshow   
+ dimensions: [1135, 170], // w/h of gallery in pixels. Should be dimensions of largest image
+      imagearray:  [     
+      ["images/slider/image1.jpg", "", "_new"],    
+      ["images/slider/image2.jpg", "", "_new"], 
+      ["images/slider/image3.jpg", "", "_new"],
+      ["images/slider/image4.jpg", "", "_new"],
+	  ["images/slider/image5.jpg", "", "_new"],
+	  ["images/slider/image6.jpg", "", "_new"]// <--no comma after last image element
+      ], 
+      displaymode: {type:'auto', pause:3000, cycles:0, wraparound:false},   
+  persist: false, //remember last viewed slide and recall within same session?   
+  fadeduration: 2000, //transition (milliseconds)  
+  descreveal: "ondemand",
+  togglerid: ""
+  })
+</script>      
+	<script type="text/javascript">
+		var menu=new menu.dd("menu");
+		menu.init("menu","menuhover");
+	</script>                   
+</body>
+</html>
